@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table style="width: 100%" cellpadding="0" cellspacing="0" border="1">
+        <tr style="height: 20px">
+            <td>编号</td>
+             <td>地址</td>
+             <td>价格</td>
+             <td>描述</td>
+             <td>链接</td>
+        </tr>
+         {% for i in list %}
+            <tr style="height: 20px">
+                <td>{{i.id}}</td>
+             <td>{{i.address}}</td>
+             <td>{{i.price}}</td>
+             <td>{{i.product_desc}}</td>
+             <td>{{i.url}}</td>
+        </tr>
+        {% end %}
+    </table>
+
+</body>
+</html>
